@@ -17,7 +17,9 @@ public class BrowserTest {
 	public void getData()
 	{
 		System.out.println("Hello Guys");
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+// 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:Selenium-java-chromedriver_win32chromedriver.exe");
+		
 		WebDriverManager.chromedriver().clearCache()
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver =new ChromeDriver();
