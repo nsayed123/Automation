@@ -18,6 +18,7 @@ public class BrowserTest {
 	{
 		System.out.println("Hello Guys");
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		WebDriverManager.chromedriver().clearCache()
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://sssaliqa.azurewebsites.net/webapp/");
